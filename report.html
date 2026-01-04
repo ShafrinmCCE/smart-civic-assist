@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Report Issue | Smart Civic Assist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- BACK LINK -->
+  <div class="back-link" onclick="goToDashboard()">
+    ← Back to Dashboard
+  </div>
+
+  <!-- REPORT CARD -->
+  <div class="report-container">
+
+    <h2>Report a Civic Issue</h2>
+    <p class="report-sub">
+      Describe the problem and submit it to the concerned department.
+    </p>
+
+    <!-- DESCRIPTION -->
+    <label>Describe the Problem *</label>
+    <textarea
+      id="issueDesc"
+      placeholder="Describe the issue clearly..."
+    ></textarea>
+
+    <!-- AUTO CLASSIFY -->
+    <button class="auto-btn" onclick="autoClassify()">
+      Auto-Classify Issue
+    </button>
+
+    <!-- CATEGORY + PRIORITY -->
+    <div class="row">
+      <div class="field">
+        <label>Category</label>
+        <select>
+          <option>Select category</option>
+          <option>Road</option>
+          <option>Garbage</option>
+          <option>Water</option>
+          <option>Electricity</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Priority</label>
+        <select>
+          <option>Select priority</option>
+          <option>Low</option>
+          <option>Medium</option>
+          <option>High</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- LOCATION -->
+    <label>Location (Optional)</label>
+    <div class="location-row">
+      <input type="text" placeholder="Enter address">
+      <button class="loc-btn" onclick="getLocation()">Get</button>
+    </div>
+
+    <!-- SUBMIT -->
+    <button type="button" class="submit-btn" onclick="submitIssue()">
+      Report Issue
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

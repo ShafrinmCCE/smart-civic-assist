@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up | Smart Civic Assist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-body">
+
+  <div class="auth-card">
+
+    <div class="auth-icon">🛡️</div>
+
+    <h2>Smart Civic Assist</h2>
+    <p class="auth-sub">
+      Create an account to start reporting issues
+    </p>
+
+    <form onsubmit="signup(event)">
+      <label>Email</label>
+      <input type="email" placeholder="your@email.com" required>
+
+      <label>Password</label>
+      <input type="password" placeholder="Password" required>
+
+      <button type="submit" class="auth-btn">
+        Sign Up
+      </button>
+    </form>
+
+    <p class="switch-text">
+      Already have an account?
+      <span onclick="goToLogin()">Log in</span>
+    </p>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

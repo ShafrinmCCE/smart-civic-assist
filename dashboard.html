@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Issues | Smart Civic Assist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-left">
+      <span class="shield">🛡️</span>
+      <span class="title">Smart Civic Assist</span>
+    </div>
+
+    <div class="nav-right">
+      <div class="nav-item">My Issues</div>
+      <div class="nav-user">shafrin.m@sece.ac.in</div>
+      <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="dashboard">
+
+    <div class="dashboard-header">
+      <div>
+        <h1>My Issues</h1>
+        <p>Track the status of your reported civic issues</p>
+      </div>
+
+      <button class="nav-btn" onclick="goToReport()">
+        + Report New Issue
+      </button>
+    </div>
+
+    <!-- EMPTY STATE -->
+    <div class="empty-state">
+      <div class="empty-icon">📄</div>
+      <h3>No issues reported yet</h3>
+      <p>Start by reporting a civic issue in your area</p>
+
+      <button class="nav-btn" onclick="goToReport()">
+        + Report Your First Issue
+      </button>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
